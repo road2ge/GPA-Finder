@@ -3,11 +3,11 @@ from __future__ import print_function
 cp_gpa = []
 h_gpa = []
 ap_gpa = []
-average = 61
-for whattonamethis in range(0, 40):
-    cp_gpa.append(whattonamethis * .125)
-    h_gpa.append(whattonamethis * .125 + .5)
-    ap_gpa.append(whattonamethis * .125 + 1)
+average = 50
+for whattonamethis in range(0, 50):
+    cp_gpa.append(whattonamethis * .1)
+    h_gpa.append(whattonamethis * .1 + .5)
+    ap_gpa.append(whattonamethis * .1 + 1)
 
 number_of_classes = int(input('How many classes were you enrolled in this year? '))
 cp_classes = int(input('And how many of those classes were weighted CP (standard)? '))
@@ -19,17 +19,17 @@ print('I\'m going to have to ask you some questions now. Unfortunately, I would 
 gpas = []
 for cp_class_grade in range(0, cp_classes):
     num_grade = int(input('What was your grade for one of your CP classes? '))
-    gpa = cp_gpa[num_grade - 61]
+    gpa = cp_gpa[num_grade - 51]
     gpas.append(gpa)
 
 for h_class_grade in range(0, h_classes):
     num_grade = int(input('What was your grade for one of your Honors classes? '))
-    gpa = h_gpa[num_grade - 61]
+    gpa = h_gpa[num_grade - 51]
     gpas.append(gpa)
 
 for ap_class_grade in range(0, (number_of_classes - cp_classes) - h_classes):
     num_grade = int(input('What was your grade for one of your AP classes? '))
-    gpa = ap_gpa[num_grade - 61]
+    gpa = ap_gpa[num_grade - 51]
     gpas.append(gpa)
 
 total_gpa = 0.0    
