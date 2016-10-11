@@ -1,3 +1,4 @@
+#This is a Python 2.7 script.
 from __future__ import print_function
 # Let's define some grade things.
 cp_gpa = []
